@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body{
+    background-color: #343D33;
+}
+.wrap{
+    padding:96px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    max-width: 1040px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: top;
+    flex-wrap: wrap;
+    margin:0 auto;
+}
+
+.container-1{
+    order: 1;
+    max-width: 534px;
+}
+
+.container-2{
+    max-width: 417px;
+    order: 2;
+    margin-top: 17px;
+}
+
+
+.container-2 h1{
+    text-align: center;
+    color: white;
+    font-family: Libre Baskerville;
+    font-size: 34px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 110%; 
+    text-transform: capitalize;
+}
+
+.container-2 p{
+    margin-top: 16px;
+    text-align: center;
+    color: white;
+    font-family: Roboto;
+    margin-top: 16px;
+    margin-right: 16px;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.container-2 button{
+    margin-top: 32px;
+    margin-right: 216px;
+
+    display: inline-flex;
+    padding: 15px 30px;
+    align-items: center;
+    /* gap: 10px; */
+
+    max-width: 165px;
+    box-sizing: border-box;
+    align-items: center;
+    color: #fff;
+    border: 2px solid white;
+    font-family: Roboto;
+    font-style: normal;
+    background-color: #343D33;
+}
+
+.container-3{
+    max-width: 1040px;
+    order: 3;
+    margin-top: 80px;
+}
+
+.plant-accent{
+    position: fixed;
+    z-index: -1;
+    bottom: 25%;
+    right: 0%;
+}
+.plant-accent img{
+    max-width: 534px;
+    max-height: 462px;
+    object-fit: contain;
+    transform: translate(20%,0%);
+}
+
+/* For tablets */
+@media(max-width:1024px){
+   .maincontainer{
+    flex-direction: column;
+   }
+
+   .container-1{
+    max-width: 534px;
+   }
+
+   .container-3{
+    margin-top: 40px;
+    order: 2;
+    max-width: 534px;
+   }
+
+   .container-2{
+    margin-top: 60px;
+    order:3;
+   }
+
+   .plant-accent img{
+    max-width: 342px;
+    max-height: 357px;
+    transform: translate(25%,95%);
+   }
+    
+}
+
+/* For Mobile*/
+@media(max-width:575px){
+    .maincontainer{
+     flex-direction: column;
+     max-width: 344px;
+
+    }
+ 
+    .container-3{
+     margin-top: 16px;
+     order: 2;
+     max-width: 534px;
+    }
+ 
+    .container-2{
+     margin-top: 40px;
+     order:3;
+    }
+     
+    .container-2 button{
+        margin: 32px 90px;
+    }
+
+    .plant-accent img{
+        max-width: 195px;
+        max-height: 188px;
+    }
+ }
